@@ -1,0 +1,103 @@
+#custom-tinyLayer-wrap{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 900;
+}
+#custom-tinyLayer-wrap .custom-tinyLayer--shade{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 901;
+  filter:alpha(opacity=30)\9;
+  opacity: 0.3;
+  background: #000000;
+}
+#custom-tinyLayer-wrap .custom-tinyLayer--content{
+  position: absolute;
+  z-index: 902;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.12), 0px 0px 6px 0px rgba(0,0,0,0.04);
+  border-radius: 2px;
+}
+#custom-tinyLayer-wrap .custom-tinyLayer--content-default{
+  width: 390px;
+  height: 202px;
+  padding: 20px;
+}
+#custom-tinyLayer-wrap .custom-tinyLayer--content-close{
+  position: absolute;
+  z-index: 903;
+  right: 16px;
+  top: 16px;
+  transition: transform 0.5s ease-in;
+}
+#custom-tinyLayer-wrap a.custom-tinyLayer--content-close:hover{
+  transform: rotate(180deg);
+}
+.custom-tinyLayer--content-close img{
+  width: 22px;
+  height: 22px;
+}
+#custom-tinyLayer-wrap .custom-tinyLayer--content-title{
+  width: 100%;
+  height: 16px;
+  line-height: 16px;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  color: #1F2D3D;
+}
+#custom-tinyLayer-wrap .custom-tinyLayer--content-body{
+  margin-top: 30px;
+  width: 100%;
+  height: 86px;
+  position: relative;
+}
+#custom-tinyLayer-wrap .custom-tinyLayer--content-icon{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 42px;
+}
+#custom-tinyLayer-wrap .custom-tinyLayer--content-text{
+  margin-left: 54px;
+  text-align: left;
+  font-size: 14px;
+  padding-top: 15px;
+}
+#custom-tinyLayer-wrap .custom-tinyLayer--content-btns{
+  width: 100%;
+  height: 36px;
+}
+#custom-tinyLayer-wrap .custom-tinyLayer--content-btns button{
+  width: 64px;
+  height: 36px;
+  display: inline-block;
+  float: right;
+  margin-left: 10px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+#custom-tinyLayer-wrap .custom-tinyLayer--content-btns--yes{
+  color: #ffffff;
+  background-color: #FF9933;
+}
+#custom-tinyLayer-wrap .custom-tinyLayer--content-btns--no{
+  font-family: .PingFangSC-Regular;
+  font-size: 14px;
+  color: #818181;
+  border: 1px solid #D2D2D2;
+}
